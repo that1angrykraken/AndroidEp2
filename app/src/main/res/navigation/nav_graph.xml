@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainDishesFragment">
+
+    <fragment
+        android:id="@+id/mainDishesFragment"
+        android:name="seamonster.kraken.androidep2.ui.mainDishes.MainDishesFragment"
+        android:label="fragment_main_dishes"
+        tools:layout="@layout/fragment_main_dishes" >
+        <action
+            android:id="@+id/action_mainDishesFragment_to_sideDishesFragment"
+            app:destination="@id/sideDishesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sideDishesFragment"
+        android:name="seamonster.kraken.androidep2.ui.sideDishes.SideDishesFragment"
+        android:label="fragment_side_dishes"
+        tools:layout="@layout/fragment_side_dishes" >
+        <action
+            android:id="@+id/action_sideDishesFragment_to_dessertsFragment2"
+            app:destination="@id/dessertsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/dessertsFragment2"
+        android:name="seamonster.kraken.androidep2.ui.desserts.DessertsFragment"
+        android:label="fragment_desserts"
+        tools:layout="@layout/fragment_desserts" >
+        <action
+            android:id="@+id/action_dessertsFragment2_to_drinksFragment"
+            app:destination="@id/drinksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drinksFragment"
+        android:name="seamonster.kraken.androidep2.ui.drinks.DrinksFragment"
+        android:label="fragment_drinks"
+        tools:layout="@layout/fragment_drinks" >
+        <action
+            android:id="@+id/action_drinksFragment_to_orderedFragment"
+            app:destination="@id/orderedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderedFragment"
+        android:name="seamonster.kraken.androidep2.ui.ordered.OrderedFragment"
+        android:label="fragment_ordered"
+        tools:layout="@layout/fragment_ordered" />
+</navigation>

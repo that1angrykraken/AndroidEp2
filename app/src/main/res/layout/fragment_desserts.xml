@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.desserts.DessertsFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDesserts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="56dp"
+        android:clipToPadding="false"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonPrevPage"
+        style="@style/Widget.Material3.Button.IconButton.Filled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tooltipText="Previous page"
+        android:contentDescription="Back to previous page"
+        app:icon="@drawable/round_keyboard_arrow_left_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonNextPage"
+        style="@style/Widget.Material3.Button.IconButton.Filled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tooltipText="Next page"
+        android:contentDescription="Go to next page"
+        app:icon="@drawable/round_keyboard_arrow_right_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
